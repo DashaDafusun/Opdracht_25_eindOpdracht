@@ -1,0 +1,152 @@
+li {
+    list-style-type: none;
+}
+
+#buttonMenu img {
+    width: 50px;
+    height: 50px;
+}
+
+.hover {
+    background-color: rgb(243, 232, 232);
+    opacity: 0.4;
+    width: 50px;
+}
+
+
+#blockMenu {
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+.blockColor {
+    display: none;
+    width: 200px;      
+    height: auto;  
+    margin: 0; 
+}
+
+.blockColor ul {
+    padding-inline-start: 0; 
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 200px; 
+    color: rgb(41, 35, 28);
+    font-weight: bolder;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   
+}
+
+.colorItem {
+    display: flex;
+    flex-flow: column nowrap;   
+    width: 200px;
+    align-content: center;    
+    justify-content: space-between;      
+    padding: 30px 15px 15px 15px;
+    color: rgb(41, 35, 28);
+    font-weight: bolder;
+    border: 1px dotted black;
+    animation: box 2s ease-out 1ms normal;
+    
+}   
+
+.blockColor li:nth-child(1)  {
+    background-color: rgb(252, 239, 225);
+}
+
+.blockColor li:nth-child(2)  {
+    background-color: rgb(248, 218, 184);    
+}
+
+.blockColor li:nth-child(3)  {
+    background-color: rgb(250, 206, 155);
+}
+
+.blockColor li:nth-child(4)  {
+    background-color: rgb(252, 183, 104);
+}
+
+.blockColor li:nth-child(5)  {
+    background-color: rgb(247, 145, 27);
+}
+
+.active {
+    display: flex;
+    flex-flow: column nowrap;
+    border-bottom: 5px black;
+    width: 200px;
+    align-content: center;    
+    justify-content: space-between;   
+    height: 40px;
+    padding: 15px 15px 15px 0;
+    color: rgb(41, 35, 28);
+    font-weight: bolder;
+    border: 0.5 black;
+}
+
+.activeMelk {
+    background-color: rgb(252, 239, 225); 
+}
+
+.activeBeige {
+    background-color: rgb(248, 218, 184);
+}
+
+.activeMokko {
+    background-color: rgb(250, 206, 155);
+}
+
+.activePeach {
+    background-color: rgb(252, 183, 104);
+}
+
+.activeOrange {
+    background-color: rgb(247, 145, 27);
+}
+
+
+#blockRadio {
+    display: flex;
+    flex-flow: column;
+    font-size: 18px;
+    font-weight: bold;
+    border: 5px black;
+}
+
+#blockRadio p {
+    align-content: flex-end;
+}
+
+
+@keyframes box {
+    from {
+        transform: translate(0, 150px);
+    }
+
+    45% {
+        transform: translate(0px, 100px);
+    }
+
+    60% {
+        transform: translate(0px, 50px);
+    }
+
+    85% {
+        transform: translate(0px, 20px);
+    }
+
+    to {
+        transform: translate(0px, 0px)
+    }
+
+}
